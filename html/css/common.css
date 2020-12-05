@@ -916,26 +916,44 @@ button::-moz-focus-inner {
 }
 
 .slick-prev:before {
-    content: "\f0a8" !important;
+    content: "\f104" !important;
     font-family: "FontAwesome" !important;
     opacity: 1 !important;
     font-size: 35px !important;
+    background: #000;
     top: 0px;
     position: absolute;
+    padding: 5px;
     left: -25px;
     right: 0;
+    border-radius: 50px;
+    display: block;
+    height: 50px;
+    width: 50px;
 }
 .slick-next:before {
-    content: "\f0a9" !important;
+    content: "\f105" !important;
     font-family: "FontAwesome" !important;
     opacity: 1 !important;
     font-size: 32px !important;
     position: absolute;
     top: 0;
-    left: 7px;
+    left: -5px;
+    padding: 10px;
     right: 0;
+    border-radius: 50px;
+    height: 50px;
+    width: 50px;
+    background: #000;
 }
 
+.slider{
+    box-shadow: 0 6px 12px #ffffff38;
+}
+
+.slick-list {
+    border-radius: 15px !important;
+}
 fieldset {
 	border: medium none !important;
 	margin: 0 0 10px;
@@ -1164,6 +1182,7 @@ figure {
 .price-details {
     background: #fff;
     text-align: left;
+    border-radius: 12px;
     padding: 25px;
     color: #000;
 }
@@ -1188,6 +1207,7 @@ figure {
     margin-top: 15px;
     padding: 25px;
     color: #000;
+    border-radius: 12px;
 }
 
 .slick-initialized .slick-slide {
@@ -1213,6 +1233,7 @@ figure {
     left: 32px;
     font-family: "FontAwesome";
     font-size: 18px;
+    color: #50c4e3;
 }
 
 .contact-mail:before {
@@ -1221,6 +1242,7 @@ figure {
     left: 32px;
     font-family: "FontAwesome";
     font-size: 18px;
+    color: #ffb32f;
 }
 
 .contact-location::before {
@@ -1228,6 +1250,7 @@ figure {
     position: absolute;
     left: 35px;
     top: 70px;
+    color: #39c039;
     font-family: "FontAwesome";
     font-size: 18px;
 }
