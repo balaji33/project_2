@@ -1052,7 +1052,14 @@ nav {
     border-radius: 50px;
     width: 60px;
     height: 60px;
+    box-shadow: 0 0 8px 0 rgba(17,22,26,.16), 0 4px 8px 0 rgba(17,22,26,.08), 0 8px 16px 0 rgba(17,22,26,.08);
 }
+
+.btn-search:hover {
+    transition: .5s;
+    background: #4ac2e2;
+}
+
 .content-inner {
     box-shadow: 0 6px 12px #0052e038;
     border-radius: 10px;
