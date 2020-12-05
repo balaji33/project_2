@@ -1,0 +1,892 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Cars web</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <!----------------------CSS------------------>
+        <link type="text/css" rel="stylesheet" href="css/bootstrap.min.css" />
+        <link type="text/css" rel="stylesheet" href="css/header-animation.css" />
+        <link type="text/css" rel="stylesheet" href="css/common.css" />
+        <link type="text/css" rel="stylesheet" href="css/responsive.css" />
+        <link type="text/css" rel="stylesheet" href="css/animate.css" />
+        <link type="text/css" rel="stylesheet" href="css/slick-theme.css" />
+        <link type="text/css" rel="stylesheet" href="css/slick.css" />
+        <script src="js/float-panel.js"></script>
+        <script src="js/jquery-2.1.4.min.js"></script>
+        <script src="https://kit.fontawesome.com/87537384a1.js" crossorigin="anonymous"></script>
+    </head>
+
+    <body>
+        <header class="float-panel" data-top="0" data-scroll="10">
+            <div class="container-fluid">
+                <div class="row align-items-center justify-content-between">
+                    <a href="#">
+                        <img src="./img/sample-logo.png" alt="img" class="logo-header" />
+                    </a>
+                    <nav class="d-none d-lg-block">
+                        <ul class="main-menu d-flex flex-column flex-lg-row align-items-lg-center list-unstyled p-0">
+                            <li>
+                                <a href="#" class="d-block">
+                                    <span>
+                                        <div class="center">
+                                            <select name="sources" id="sources" class="custom-select sources" placeholder="Manufacturer">
+                                                <option value="profile">Honda</option>
+                                                <option value="word">Honda</option>
+                                                <option value="hashtag">Honda</option>
+                                            </select>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="d-block">
+                                    <span>
+                                        <div class="center">
+                                            <select name="sources" id="sources" class="custom-select sources" placeholder="Model">
+                                                <option value="profile">i10</option>
+                                                <option value="word">i20</option>
+                                                <option value="hashtag">i30</option>
+                                            </select>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="d-block">
+                                    <span>
+                                        <div class="center">
+                                            <select name="sources" id="sources" class="custom-select sources" placeholder="Year">
+                                                <option value="profile">2020</option>
+                                                <option value="word">2019</option>
+                                                <option value="hashtag">2018</option>
+                                            </select>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#" class="d-block">
+                                    <span>
+                                        <div class="center">
+                                            <select name="sources" id="sources" class="custom-select sources" placeholder="Location">
+                                                <option value="profile">hyderabad</option>
+                                                <option value="word">vizag</option>
+                                                <option value="hashtag">banglore</option>
+                                            </select>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="d-block">
+                                    <span>
+                                        <div class="center">
+                                            <select name="sources" id="sources" class="custom-select sources" placeholder="Price range">
+                                                <option value="profile">Low to high</option>
+                                                <option value="word">High to low</option>
+                                            </select>
+                                        </div>
+                                    </span>
+                                </a>
+                            </li>
+                            <li>
+                                <input type="submit" value="Search" class="btn-search" />
+                            </li>
+                        </ul>
+                    </nav>
+                    <div class="side-menu-close d-flex d-lg-none flex-wrap flex-column align-items-center justify-content-center ml-auto">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </header>
+
+        <!-- side menu start -->
+        <div class="side-menu-wrap">
+            <nav class="side-menu-nav">
+                <!-- auto generated side menu from top header menu -->
+            </nav>
+            <div class="side-menu-close d-flex flex-wrap flex-column align-items-center justify-content-center">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+        <!-- side menu end -->
+
+        <div class="main-cards-body">
+            <div class="cards-inner container-fluid">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="content-inner">
+                            <div class="top-body">
+                                <figure>
+                                    <a href="#">
+                                        <img src="./img/car.jpg" alt="img" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="bottom-body">
+                                <div class="product-brand">Ford Motor</div>
+                                <li class="price-info">89,777</li>
+                                <li class="kms-info">500Kms</li>
+                                <div class="contact-gallery-block">
+                                    <div class="gallery-block">
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#product-images-1" class="popup-with-zoom-anim play-view text-center">
+                                                Details
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="product-images-1" class="product-images zoom-anim-dialog mfp-hide">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="slider">
+                                                            <img src="./img/pexels-arnie-watkins-3156482 (1).jpg" />
+                                                            <img src="./img/pexels-arnie-watkins-3156482.jpg" />
+                                                            <img src="./img/pexels-pavlo-luchkovski-337909.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-5 details-popup">
+                                                        <div class="price-details">
+                                                            <div>
+                                                                650000
+                                                            </div>
+                                                            <div>Car name</div>
+                                                        </div>
+
+                                                        <div class="product-description">
+                                                            <p>
+                                                                The is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                                                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                                page editors now use Lorem Ipsum as their default model text, and a search
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#contact-us" class="popup-with-zoom-anim play-view text-center contact-btn">
+                                                Contact
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="contact-us" class="zoom-anim-dialog mfp-hide">
+                                                <div class="row">
+                                                    <div class="col-md-4">
+                                                       <div class="contact-info">
+                                                        <h3 class="mt-1 mb-4">Contact info</h3>
+                                                        <div class="contact-location">
+                                                            <p>20-22 hyderabad</p>
+                                                            <p>miyapur</p>
+                                                            <p>door no</p>
+                                                            <p>andhra pradesh</p>
+                                                        </div>
+                                                        <div class="contact-mail">
+                                                            balaji@gmail.com
+                                                        </div>
+                                                        <div class="contact-phone">
+                                                            9652963487
+                                                        </div>
+                                                       </div>
+                                                    </div>
+                                                <div class="col-md-6">
+                                                    <form id="contact" action="" method="post">
+                                                        <h3>Send a message</h3>
+                                                        <fieldset>
+                                                            <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <input placeholder="Your Email Address" type="email" tabindex="2" required />
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <input placeholder="Your Phone Number" type="tel" tabindex="3" required />
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <input placeholder="Location" type="url" tabindex="4"/>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <textarea placeholder="Type your Message Here...." tabindex="5"></textarea>
+                                                        </fieldset>
+                                                        <fieldset>
+                                                            <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                                        </fieldset>
+                                                    </form>
+                                                </div>
+                                                </div>
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="content-inner">
+                            <div class="top-body">
+                                <figure>
+                                    <a href="#">
+                                        <img src="./img/car.jpg" alt="img" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="bottom-body">
+                                <div class="product-brand">Ford Motor</div>
+                                <li class="price-info">89,777</li>
+                                <li class="kms-info">500Kms</li>
+                                <div class="contact-gallery-block">
+                                    <div class="gallery-block">
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#product-images-2" class="popup-with-zoom-anim play-view text-center">
+                                                Detailsd
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="product-images-2" class="product-images zoom-anim-dialog mfp-hide">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="slider">
+                                                            <img src="./img/pexels-arnie-watkins-3156482 (1).jpg" />
+                                                            <img src="./img/pexels-arnie-watkins-3156482.jpg" />
+                                                            <img src="./img/pexels-pavlo-luchkovski-337909.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-5 details-popup">
+                                                        <div class="price-details">
+                                                            <div>
+                                                                650000
+                                                            </div>
+                                                            <div>Car name</div>
+                                                        </div>
+
+                                                        <div class="product-description">
+                                                            <p>
+                                                                The is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                                                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                                page editors now use Lorem Ipsum as their default model text, and a search
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#contact-us" class="popup-with-zoom-anim play-view text-center contact-btn">
+                                                Contact
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="contact-us" class="zoom-anim-dialog mfp-hide">
+                                                <!-- <form id="contact" action="" method="post">
+                                                    <h3>Contact us</h3>
+                                                    <fieldset>
+                                                        <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Email Address" type="email" tabindex="2" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Hyderabad" type="url" tabindex="4" required readonly />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                                    </fieldset>
+                                                </form> -->
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="content-inner">
+                            <div class="top-body">
+                                <figure>
+                                    <a href="#">
+                                        <img src="./img/car.jpg" alt="img" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="bottom-body">
+                                <div class="product-brand">Ford Motor</div>
+                                <li class="price-info">89,777</li>
+                                <li class="kms-info">500Kms</li>
+                                <div class="contact-gallery-block">
+                                    <div class="gallery-block">
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#product-images-3" class="popup-with-zoom-anim play-view text-center">
+                                                Details
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="product-images-3" class="product-images zoom-anim-dialog mfp-hide">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="slider">
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-5 details-popup">
+                                                        <div class="price-details">
+                                                            <div>
+                                                                650000
+                                                            </div>
+                                                            <div>Car name</div>
+                                                        </div>
+
+                                                        <div class="product-description">
+                                                            <p>
+                                                                The is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                                                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                                page editors now use Lorem Ipsum as their default model text, and a search
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#contact-us" class="popup-with-zoom-anim play-view text-center contact-btn">
+                                                Contact
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="contact-us" class="zoom-anim-dialog mfp-hide">
+                                                <!-- <form id="contact" action="" method="post">
+                                                    <h3>Contact us</h3>
+                                                    <fieldset>
+                                                        <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Email Address" type="email" tabindex="2" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Hyderabad" type="url" tabindex="4" required readonly />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                                    </fieldset>
+                                                </form> -->
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="content-inner">
+                            <div class="top-body">
+                                <figure>
+                                    <a href="#">
+                                        <img src="./img/car.jpg" alt="img" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="bottom-body">
+                                <div class="product-brand">Ford Motor</div>
+                                <li class="price-info">89,777</li>
+                                <li class="kms-info">500Kms</li>
+                                <div class="contact-gallery-block">
+                                    <div class="gallery-block">
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#product-images-4" class="popup-with-zoom-anim play-view text-center">
+                                                Details
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="product-images-4" class="product-images zoom-anim-dialog mfp-hide">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="slider">
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-5 details-popup">
+                                                        <div class="price-details">
+                                                            <div>
+                                                                650000
+                                                            </div>
+                                                            <div>Car name</div>
+                                                        </div>
+
+                                                        <div class="product-description">
+                                                            <p>
+                                                                The is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                                                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                                page editors now use Lorem Ipsum as their default model text, and a search
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#contact-us" class="popup-with-zoom-anim play-view text-center contact-btn">
+                                                Contact
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="contact-us" class="zoom-anim-dialog mfp-hide">
+                                                <!-- <form id="contact" action="" method="post">
+                                                    <h3>Contact us</h3>
+                                                    <fieldset>
+                                                        <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Email Address" type="email" tabindex="2" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Hyderabad" type="url" tabindex="4" required readonly />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                                    </fieldset>
+                                                </form> -->
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="content-inner">
+                            <div class="top-body">
+                                <figure>
+                                    <a href="#">
+                                        <img src="./img/car.jpg" alt="img" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="bottom-body">
+                                <div class="product-brand">Ford Motor</div>
+                                <li class="price-info">89,777</li>
+                                <li class="kms-info">500Kms</li>
+                                <div class="contact-gallery-block">
+                                    <div class="gallery-block">
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#product-images-5" class="popup-with-zoom-anim play-view text-center">
+                                                Details
+                                            </a>
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="product-images-5" class="product-images zoom-anim-dialog mfp-hide">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="slider">
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-5 details-popup">
+                                                        <div class="price-details">
+                                                            <div>
+                                                                650000
+                                                            </div>
+                                                            <div>Car name</div>
+                                                        </div>
+
+                                                        <div class="product-description">
+                                                            <p>
+                                                                The is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                                                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                                page editors now use Lorem Ipsum as their default model text, and a search
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#contact-us" class="popup-with-zoom-anim play-view text-center contact-btn">
+                                                Contact
+                                            </a>
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="contact-us" class="zoom-anim-dialog mfp-hide">
+                                                <!-- <form id="contact" action="" method="post">
+                                                    <h3>Contact us</h3>
+                                                    <fieldset>
+                                                        <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Email Address" type="email" tabindex="2" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Hyderabad" type="url" tabindex="4" required readonly />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                                    </fieldset>
+                                                </form> -->
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="content-inner">
+                            <div class="top-body">
+                                <figure>
+                                    <a href="#">
+                                        <img src="./img/car.jpg" alt="img" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="bottom-body">
+                                <div class="product-brand">Ford Motor</div>
+                                <li class="price-info">89,777</li>
+                                <li class="kms-info">500Kms</li>
+                                <div class="contact-gallery-block">
+                                    <div class="gallery-block">
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#product-images-6" class="popup-with-zoom-anim play-view text-center">
+                                                Details
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="product-images-6" class="product-images zoom-anim-dialog mfp-hide">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="slider">
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-5 details-popup">
+                                                        <div class="price-details">
+                                                            <div>
+                                                                650000
+                                                            </div>
+                                                            <div>Car name</div>
+                                                        </div>
+
+                                                        <div class="product-description">
+                                                            <p>
+                                                                The is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                                                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                                page editors now use Lorem Ipsum as their default model text, and a search
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#contact-us" class="popup-with-zoom-anim play-view text-center contact-btn">
+                                                Contact
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="contact-us" class="zoom-anim-dialog mfp-hide">
+                                                <!-- <form id="contact" action="" method="post">
+                                                    <h3>Contact us</h3>
+                                                    <fieldset>
+                                                        <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Email Address" type="email" tabindex="2" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Hyderabad" type="url" tabindex="4" required readonly />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                                    </fieldset>
+                                                </form> -->
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="content-inner">
+                            <div class="top-body">
+                                <figure>
+                                    <a href="#">
+                                        <img src="./img/car.jpg" alt="img" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="bottom-body">
+                                <div class="product-brand">Ford Motor</div>
+                                <li class="price-info">89,777</li>
+                                <li class="kms-info">500Kms</li>
+                                <div class="contact-gallery-block">
+                                    <div class="gallery-block">
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#product-images-7" class="popup-with-zoom-anim play-view text-center">
+                                                Details
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="product-images-7" class="product-images zoom-anim-dialog mfp-hide">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="slider">
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-5 details-popup">
+                                                        <div class="price-details">
+                                                            <div>
+                                                                650000
+                                                            </div>
+                                                            <div>Car name</div>
+                                                        </div>
+
+                                                        <div class="product-description">
+                                                            <p>
+                                                                The is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                                                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                                page editors now use Lorem Ipsum as their default model text, and a search
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#contact-us" class="popup-with-zoom-anim play-view text-center contact-btn">
+                                                Contact
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="contact-us" class="zoom-anim-dialog mfp-hide">
+                                                <!-- <form id="contact" action="" method="post">
+                                                    <h3>Contact us</h3>
+                                                    <fieldset>
+                                                        <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Email Address" type="email" tabindex="2" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Hyderabad" type="url" tabindex="4" required readonly />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                                    </fieldset>
+                                                </form> -->
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="content-inner">
+                            <div class="top-body">
+                                <figure>
+                                    <a href="#">
+                                        <img src="./img/car.jpg" alt="img" />
+                                    </a>
+                                </figure>
+                            </div>
+                            <div class="bottom-body">
+                                <div class="product-brand">Ford Motor</div>
+                                <li class="price-info">89,777</li>
+                                <li class="kms-info">500Kms</li>
+                                <div class="contact-gallery-block">
+                                    <div class="gallery-block">
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#product-images-8" class="popup-with-zoom-anim play-view text-center">
+                                                Details
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="product-images-8" class="product-images zoom-anim-dialog mfp-hide">
+                                                <div class="row">
+                                                    <div class="col-md-6">
+                                                        <div class="slider">
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                            <img src="./img/car.jpg" />
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="col-md-5 details-popup">
+                                                        <div class="price-details">
+                                                            <div>
+                                                                650000
+                                                            </div>
+                                                            <div>Car name</div>
+                                                        </div>
+
+                                                        <div class="product-description">
+                                                            <p>
+                                                                The is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a
+                                                                more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English. Many desktop publishing packages and web
+                                                                page editors now use Lorem Ipsum as their default model text, and a search
+                                                            </p>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                        <li class="popup-main">
+                                            <!--popup-->
+                                            <a href="#contact-us" class="popup-with-zoom-anim play-view text-center contact-btn">
+                                                Contact
+                                            </a>
+
+                                            <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+                                            <div id="contact-us" class="zoom-anim-dialog mfp-hide">
+                                                <!-- <form id="contact" action="" method="post">
+                                                    <h3>Contact us</h3>
+                                                    <fieldset>
+                                                        <input placeholder="Your name" type="text" tabindex="1" required autofocus />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Email Address" type="email" tabindex="2" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Your Phone Number" type="tel" tabindex="3" required />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <input placeholder="Hyderabad" type="url" tabindex="4" required readonly />
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <textarea placeholder="Type your Message Here...." tabindex="5" required></textarea>
+                                                    </fieldset>
+                                                    <fieldset>
+                                                        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Submit</button>
+                                                    </fieldset>
+                                                </form> -->
+                                            </div>
+                                            <!--//popup-->
+                                        </li>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer p-5 text-center">
+            <p>&copy; BALAJI</p>
+        </div>
+
+        <script src="js/jquery-smoothscroll.js"></script>
+        <script src="js/wow.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/fontawesome.js"></script>
+        <script src="js/main.js"></script>
+        <!-- <script src="js/jquery-3.2.1.slim.min.js"></script>
+        <script src="js/popper.min.js"></script> -->
+        <script src="js/jquery.magnific-popup.min.js"></script>
+        <script src="js/slick.min.js"></script>
+    </body>
+</html>
