@@ -1102,7 +1102,7 @@ figure {
     font-family: "FontAwesome";
     font-size: 15px;
     margin-top: 1px;
-    color: #ff6f61;
+    color: #000000;
     left: 30px;
 }
 
@@ -1170,6 +1170,17 @@ figure {
 
 .price-details div:nth-child(1) {
     font-size: 26px;
+    padding-left: 20px;
+}
+
+.price-details div:nth-child(1):before {
+    content: "\f156";
+    position: absolute;
+    font-family: "FontAwesome";
+    font-size: 25px;
+    margin-top: 1px;
+    color: #000000;
+    left: 40px;
 }
 
 .product-description {
