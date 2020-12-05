@@ -1043,13 +1043,15 @@ nav {
 }
 
 .btn-search {
-    padding: 10px 12px;
+    padding: 10px 6px;
     border: none;
     background: #ffa200;
     margin-top: 6px;
     color: #fff;
     cursor: pointer;
-    border-radius: 5px;
+    border-radius: 50px;
+    width: 60px;
+    height: 60px;
 }
 .content-inner {
     box-shadow: 0 6px 12px #0052e038;
