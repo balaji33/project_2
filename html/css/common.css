@@ -1083,6 +1083,7 @@ figure {
     padding: 15px 0px 18px 15px;
     border-bottom-left-radius: 12px;
     border-bottom-right-radius: 12px;
+    border-bottom: 2px solid #4ac2e2;
 }
 
 .col-md-3 {
