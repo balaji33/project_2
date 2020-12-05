@@ -6,6 +6,11 @@ body {
     font-family: 'Open Sans', sans-serif;
 }
 
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 6px;
+}
+
 /* ---------------- For sticky header: class="float-panel"  ------------------*/
 .float-panel {
     width: 100%;
@@ -529,7 +534,7 @@ nav span {
     bottom: 100%;
     right: 25px;
     width: 14px;
-    height: 15px;
+    height: 12px;
     margin-bottom: -7px;
     border-top: 1px solid #b5b5b5;
     border-left: 1px solid #b5b5b5;
@@ -883,13 +888,14 @@ button::-moz-focus-inner {
 	background:#F9F9F9;
     padding:25px;
     border-radius: 10px;
+    border-top: 2px solid #4ac2e2;
 }
 
 #contact h3 {
-	color: #4ac2e2;
-	display: block;
-	font-size: 30px;
-	font-weight: 400;
+    color: #000000;
+    display: block;
+    font-weight: 400;
+    margin-bottom: 18px;
 }
 
 .contact-info {
@@ -902,6 +908,7 @@ button::-moz-focus-inner {
 #contact-us .col-md-4 {
     background: #fff !important;
     border-radius: 10px !important;
+    border-top: 3px solid #ffa200;
 }
 
 #contact-us button.mfp-close, button.mfp-arrow {
