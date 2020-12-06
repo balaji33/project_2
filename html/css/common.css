@@ -1032,18 +1032,6 @@ fieldset {
 .top-body {
     position: relative;
 }
-.top-body:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 0;
-    border-top-left-radius: 12px;
-    border-top-right-radius: 12px;
-    background-color: rgb(0 0 0 / 22%);
-}
 .top-body img {
     width: 100%;
     height:140px;
@@ -1094,10 +1082,6 @@ li {
     display: inline-block;
 }
 
-.main-cards-body {
-    background: #F0F7FF;
-    padding-top: 25px;
-}
 
 figure {
     margin: 0;
@@ -1115,48 +1099,13 @@ figure {
     margin-bottom: 22px;
 }
 
-.product-brand {
-    font-family: 'Raleway', sans-serif;
-    font-weight: 600;
-    margin-bottom: 4px;
-}
 
-.price-info::before {
-    content: "\f156";
-    position: absolute;
-    font-family: "FontAwesome";
-    font-size: 15px;
-    margin-top: 1px;
-    color: #000000;
-    left: 30px;
-}
 
-.kms-info:before {
-    content: "\f018";
-    position: absolute;
-    font-family: "FontAwesome";
-    font-size: 15px;
-    margin-top: 1px;
-    margin-left: -20px;
-    color: #00000096;
-}
 
-.kms-info {
-    padding-left: 30px;
-}
 
-.price-info {
-    padding-left: 12px;
-}
 
-.popup-main a {
-    padding: 6px 10px;
-    border-radius: 50px;
-    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 15%);
-    font-size: 12px;
-    border: 1px solid;
-    text-transform: uppercase
-}
+
+
 
 .popup-main a:hover {
     border: 1px solid #4ac2e2;
@@ -1269,3 +1218,115 @@ figure {
 .footer {
     background: #c7d8ed;
 }
+
+
+/*-----------------------------------cards styles------------------------------------------*/
+
+.row {
+    display: flex; /* equal height of the children */
+  }
+  
+  .col {
+    flex: 1; /* additionally, equal width */
+    
+    padding: 1em;
+    border: solid;
+  }
+
+.main-cards-body {
+    background: #F0F7FF;
+    padding-top: 75px;
+}
+
+.product-img {
+    display: flex;
+    height: 265px;
+    padding: 0;
+}
+
+.product-img img {
+    object-fit: cover;
+    border-top-left-radius: 12px;
+    border-bottom-left-radius: 12px;
+}
+
+.card-block{
+    padding: 20px 30px 20px 15px;
+}
+
+.price-info {
+    padding-left: 20px;
+    font-size: 20px;
+    margin-bottom: 8px;
+}
+.kms-info {
+    margin-bottom: 18px;
+}
+
+.price-info::before {
+    content: "\f156";
+    position: absolute;
+    font-family: "FontAwesome";
+    font-size: 20px;
+    margin-top: 1px;
+    color: #000000;
+    left: 18px;
+}
+
+.product-brand {
+    font-family: 'Raleway', sans-serif;
+    margin-bottom: 4px;
+}
+
+.main-body-card {
+    margin-bottom: 45px;
+}
+
+.main-card-inner.card {
+    box-shadow: 0 6px 20px rgba(56,125,255,.17);
+    border: none;
+    border-radius: 12px;
+}
+
+.product-content {
+    position: relative;
+    z-index: 9;
+    overflow: hidden;
+}
+
+.product-content:hover:before {
+    top: 0;
+}
+
+.product-content:before {
+    content: "";
+    position: absolute;
+    width: 95%;
+    height: 100%;
+    background: #4ac2e24f;
+    left: 0px;
+    top: 100%;
+    z-index: -1;
+    transition: all .5s ease-in-out;
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 12px;
+
+}
+
+.popup-main a {
+    padding:10px 28px;
+    border-radius: 50px;
+    box-shadow: 0 2px 8px 0 rgb(0 0 0 / 15%);
+    font-size: 12px;
+    border: 1px solid;
+    text-transform: uppercase
+}
+
+
+/* .product-content:hover {
+    color: #fff;
+} */
+
+/* .product-content .price-info:hover{
+color: #000;
+} */
